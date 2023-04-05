@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>QnA 게시판</title>
+    <style>
+      /* 스타일링 */
+      body {
+        background-color: #f7f7f7;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 20px;
+      }
+      .post {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+      .post h2 {
+        font-size: 24px;
+        margin-top: 0;
+      }
+      .post p {
+        margin-bottom: 0;
+      }
+      .post small {
+        color: #888;
+        font-size: 12px;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      form input[type="text"],
+      form textarea {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 100%;
+      }
+      form button[type="submit"] {
+        background-color: #333;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px;
+      }
+      form button[type="submit"]:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>QnA 게시판</h1>
+    </header>
+    <div class="container">
+      <form>
+        <label for="name">작성자:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="title">제목:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="content">내용:</label>
+        <textarea id="content" name="content" rows="8" required></textarea>
+        <button type="submit">작성하기</button>
+      </form>
+      <div class="post">
+        <h2>질문 제목</h2>
+        <p>질문 내용이 들어갑니다.</p>
+        <small>작성자 | 작성일</small>
+      </div>
+      <div class="post">
+        <h2>질문 제목</h2>
+        <p>질문 내용이 들어갑니다.</p>
+        <small>작성자 | 작성일</small>
+      </div>
+    </div>
+  </body>
+</html>
