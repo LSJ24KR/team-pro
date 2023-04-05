@@ -2,29 +2,15 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
-    
     
   }
-  .img-c{
-    opacity: 0.7;
-  }
+  
   header {
-    background-color: #F5FFFA;
+    background-color: #E0FFFF;
     color: #1d1a1a;
     padding: 10px;
-   
-    
-    
-  }
-  .center-text {
     text-align: center;
-    font-size: 30px;
   }
-  body{
-    background-color: #E6E6FA;
-  }
-
   /* 테이블 스타일링 */
   table {
     width: 100%;
@@ -51,7 +37,7 @@
   
   /* 게시글 번호 스타일링 */
   td:first-child {
-    width: 15%;
+    width: 10%;
     text-align: center;
     font-weight: bold;
     color: #666;
@@ -69,13 +55,12 @@
     color: #333;
     text-decoration: none;
     font-weight: bold;
-   
+    font-size: 20px;
   }
   
   td:nth-child(2) a:hover {
     text-decoration: underline;
     font-size: 20px;
-    width: 50%;
   }
   
   /* 게시글 작성자, 날짜, 조회수, 답변여부 스타일링 */
@@ -108,7 +93,6 @@
   
   .pagination li {
     display: inline;
-    background-color: #F5FFFA;
   }
   
   .pagination li a {
@@ -120,44 +104,13 @@
   }
   
   .pagination li.active a {
-    background-color: #F5FFFA;
+    background-color: #007bff;
     color: #fff;
     border: none;
   }
   
   .pagination li.disabled a {
-    color: #F5FFFA;
+    color: #ddd;
     pointer-events: none;
-    border: 1px solid #F5FFFA;
-  }
-  .category {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .category div {
-    padding: 5px 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-  }
-  
-  .category .category1 {
-    background-color: #6a5acd;
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .category .category2 {
-    background-color: #6495ed;
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  .category .category3 {
-    background-color: #20b2aa;
-    display: inline-block;
-    margin: 0 10px;
+    border: 1px solid #ddd;
   }
