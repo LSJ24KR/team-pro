@@ -1,0 +1,116 @@
+/* 전체 컨테이너 스타일링 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  header {
+    background-color: #E0FFFF;
+    color: #1d1a1a;
+    padding: 10px;
+    text-align: center;
+  }
+  /* 테이블 스타일링 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* 테이블 헤더 스타일링 */
+  thead {
+    background-color: #87CEEB;
+  }
+  
+  thead th {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #E5E5E5;
+  }
+  
+  /* 짝수 번호 행 스타일링 */
+  tbody tr:nth-child(even) {
+    background-color: #FFFFF0;
+  }
+  
+  /* 게시글 번호 스타일링 */
+  td:first-child {
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+    font-size: 20px;
+  }
+  
+  /* 게시글 제목 스타일링 */
+  td:nth-child(2) {
+    width: 50%;
+    padding-left: 40px;
+    font-size: 20px;
+  }
+  
+  td:nth-child(2) a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  td:nth-child(2) a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+  }
+  
+  /* 게시글 작성자, 날짜, 조회수, 답변여부 스타일링 */
+  td:not(:first-child):not(:nth-child(2)) {
+    width: 10%;
+    text-align: center;
+    color: #666;
+    font-size: 20px;
+  }
+  
+  /* 게시글 작성자 스타일링 */
+  td:nth-child(3) {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  /* 게시글 답변여부 스타일링 */
+  td:last-child {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .pagination {
+    display: block;
+    margin-top: 1rem;  
+    text-align: center;
+    font-size: 20px;
+}
+  
+  .pagination li {
+    display: inline;
+  }
+  
+  .pagination li a {
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    float: none;
+  }
+  
+  .pagination li.active a {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .pagination li.disabled a {
+    color: #ddd;
+    pointer-events: none;
+    border: 1px solid #ddd;
+  }
